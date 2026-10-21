@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adaptive Page Replacement</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <div class="brand-name">Adaptive Page Replacement</div>
+    <div class="brand-sub">Security- and behaviour-aware · OS Project · Aditya &amp; Aniruddh</div>
+  </div>
+  <nav class="tabs" aria-label="Sections">
+    <a href="#overview" data-page="overview">Overview</a>
+    <a href="#dataset" data-page="dataset">Dataset</a>
+    <a href="#demo" data-page="demo">Live demo</a>
+    <a href="#compare" data-page="compare">Compare</a>
+    <a href="#results" data-page="results">Results</a>
+    <a href="#how" data-page="how">How it works</a>
+  </nav>
+  <div class="top-right">
+    <span id="state" class="state" data-state="ready" role="status" aria-live="polite">Ready</span>
+    <button id="theme" class="btn btn-quiet" type="button" aria-label="Switch between dark and light theme">Light</button>
+  </div>
+</header>
+<main id="main" class="main" tabindex="-1"></main>
+<div id="tooltip" class="tooltip" role="tooltip" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ASPR Workbench</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-name">ASPR Workbench</span>
+      <span class="brand-desc">Security- and Behaviour-Aware Adaptive Page Replacement · simulation of sim.c</span>
+    </div>
+    <div class="run-meta">
+      <span class="meta-label">EXPERIMENT</span>
+      <code id="exp-id" class="mono">—</code>
+      <span id="state" class="state" data-state="ready" role="status" aria-live="polite">READY</span>
+    </div>
+    <div class="top-actions">
+      <button id="export-json" class="btn btn-ghost" type="button">Export JSON</button>
+      <button id="export-csv" class="btn btn-ghost" type="button">Export CSV</button>
+    </div>
+  </header>
+
+  <nav class="rail" aria-label="Sections">
+    <a href="#overview" data-page="overview"><span class="rail-key">1</span>Overview</a>
+    <a href="#simulator" data-page="simulator"><span class="rail-key">2</span>Simulator</a>
+    <a href="#experiments" data-page="experiments"><span class="rail-key">3</span>Experiments</a>
+    <a href="#inspector" data-page="inspector"><span class="rail-key">4</span>Memory Inspector</a>
+    <a href="#methodology" data-page="methodology"><span class="rail-key">5</span>Methodology</a>
+    <div class="rail-foot">
+      <div>Results come from <code>./sim</code>.</div>
+      <div>Simulation, not OS measurement.</div>
+    </div>
+  </nav>
+
+  <main id="main" class="main" tabindex="-1"></main>
+</div>
+<div id="tooltip" class="tooltip" role="tooltip" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>

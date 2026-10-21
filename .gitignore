@@ -1,0 +1,12 @@
+# only source code is tracked (sim, results.csv, graphs/ and docs/ stay local)
+*
+!*/
+!*.c
+!*.h
+!*.py
+!*.html
+!*.js
+!*.css
+!README.md
+!.gitignore
+!.gitattributes
